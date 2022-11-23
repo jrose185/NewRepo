@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title = "custom events 1">
+        <lightning-layout>
+            <lightning-layout-item padding = "around-small">
+                <lightning-button label="Fire Child 1" onclick={handleClick1}></lightning-button>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>
+
+
+<!-- we used  library/lightning-layout/example
+ 
+    
+    Create 2 components: chilld1, parent
+In child1.html, Create lightning button
+In Child1.js de create handler function. This function should create CUSTOM EVENT after clicking the button. Name the custom event as ‘clicked’ 
+CHILD IS DONE.
+Define Parent.html file 
+Call Child1 component. 
+Use the custom event as inline event handler(onclicked)
+Use the js property value to show on the UI
+In Parent.js define handler function. handler function(handleButtonClick) should only assign a static value to the js property that is used in parent html
+Deploy parent and Test. When you clock child button, value should be shown in the parent UI -->

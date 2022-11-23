@@ -1,0 +1,15 @@
+<template>
+    <!--Country : {country}-->
+    <slot name="country"></slot>
+    <br>
+    <!--City :{city}-->
+    <slot name="city"></slot>
+    <br>
+    <!--Famouf for:{famous}-->
+    <slot name="famousfor"></slot>
+</template>
+
+<!--types in country input handleCountryChange function triggers-->
+<!--handleCountryChange holds the user input and assign country property-->
+<!--Then we can show that country property in the parent html file using {country}-->
+<!--Note : when we use {country} in child then we must use <slot></slot> in the child component to display that data in the UI-->

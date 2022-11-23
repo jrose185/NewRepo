@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Publisher">
+        <lightning-input label="Publisher Component" 
+        onchange={handleChange}></lightning-input>
+    </lightning-card>
+    
+</template>
+
+<!--In this model we will have a pubsub.js that has ready events to help commutation between unrelated components
+Pubsub model helps communication between components that are NOT in the same DOM
+Component 1 : pubComp -> We fire the events from publisher component
+In js file we import 2 library
+import {CurrentPageReference} from 'lightning/navigation'
+import { fireEvent } from ‘c/pubsub';
+Component 2 : subComp -> We handle events in the subscriber component
+We will add pubsub.js file with reusable methods that is shared in the LWC folder that will be used by both component 
+https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.events_pubsub 
+
+
+ -->

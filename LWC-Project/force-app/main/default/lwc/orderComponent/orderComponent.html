@@ -1,0 +1,57 @@
+<template>
+    <lightning-card title="Create Order">
+
+       <lightning-button 
+        variant="brand" 
+        label="Order Button" 
+        title="Primary Action" 
+        onclick={handleOrderButton} 
+        class="slds-m-left_x-small">
+        </lightning-button>
+        <ul>
+
+       
+         
+
+         </ul>
+         <ol>
+         <template if:true={showDrinks} title="Drinks Menu" iterator:it={drinks}>
+         <div key={it.value.id} class="slds-p-left_medium">
+            <div key={it.value.id} if:true={it.first}
+            style="border:2px solid red"></div>
+            <li type="1" key={it.value.id}>{it.value.name}</li>
+            <div key={it.value.id} if:true={it.last}
+            style="border:2px solid green"></div>
+            <div key={it.value.id}
+            style="border:2px solid orange"></div>
+
+
+               </div>
+              </template>
+       
+        </ol>
+        </lightning-card>
+        <lightning-card title="Render Ingrediens If checkbox is checked">
+       <lightning-input
+        type="checkbox"
+        label ="Display Checkbox"
+        name ="input1"
+        onchange={handleChange}>
+        </lightning-input>
+       <ul>
+       <template if:true={display}
+       title="Ingredients Menu"
+       for:each={Ingredients}
+       for:item="eachIngredient">
+       <li key={eachIngredient.id}> {eachIngredient.name}</li>
+      
+    
+       </template>
+
+       </ul>
+
+      </lightning-card>
+
+
+
+</template>

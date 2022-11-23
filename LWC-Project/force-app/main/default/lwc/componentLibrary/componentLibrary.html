@@ -1,0 +1,60 @@
+<template>
+    <!-- Card
+    Avatar
+    Button
+    Input
+    Layout
+    Layout item
+    Navigation
+    Checkbox
+    Radio button
+    https://developer.salesforce.com/docs/component-library/overview/components
+    … -->
+    <lightning-card>
+        <!--Card-->
+        <lightning-card  title="New Component">
+            <lightning-button label="Run" slot="actions"></lightning-button>
+            <p class="slds-p-horizontal_small">10/05/2022 HOMEWORK</p>
+            <p slot="footer">Get Started</p>
+        </lightning-card>
+
+    <!-- AVATAR -->
+    <lightning-avatar variant="circle" src="https://www.lightningdesignsystem.com/assets/images/avatar2.jpg" initials="AW" fallback-icon-name="standard:person_account" alternative-text="Amy Weaver" class="slds-m-right_small"></lightning-avatar>
+    <br> 
+
+
+
+    <br>
+    <!-- BUTTON -->
+    <!-- Destructive variant: Identifies a potentially negative action -->
+    <lightning-button variant="success" label="Success" title="Successful action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+    <lightning-button variant="brand" label="Download" title="Download action with brand variant" icon-name="utility:download" class="slds-m-left_x-small"></lightning-button>
+    <!--Input-->
+    <lightning-input type="datetime" label="Created date"> </lightning-input>
+    <lightning-input type="search" label="Search"> </lightning-input>
+    
+    <!--LAYOUT ITEM-->
+
+    <div>
+        <lightning-layout>
+            <lightning-layout-item padding="around-medium">
+                <div>1</div>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-medium">
+                <div>2</div>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-medium">
+                <div>3</div>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-medium">
+                <div>4</div>
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>
+
+ <!--checkbox-->
+
+ 
+
+    </lightning-card>
+    </template>

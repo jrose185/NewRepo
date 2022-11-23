@@ -1,0 +1,17 @@
+/*Appliying style on the h2 elements in this component
+ <!-- Using inline style for styling h1 elements --> external CSS using CSS sheet
+ we are using h2 tag 
+*/
+
+ h2{
+
+    color:blue;
+    background-color: yellow;
+ }
+ /*class isminin onune  dot (.) konur dot means class
+ In html apply   */
+ .my-style{
+    color:purple;
+    background-color: aquamarine;
+ }
+ 

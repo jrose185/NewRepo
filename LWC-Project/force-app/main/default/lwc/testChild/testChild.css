@@ -1,0 +1,10 @@
+h1{
+    color:aquamarine
+}
+h3{
+    background-color: var(--ozel-arka-renk,yellow);
+    color:var(--ozel-renk,orange);
+}
+.custom.renk{
+    background-color: var(--c-renk,blue);
+}

@@ -1,0 +1,12 @@
+ c-test-child{
+
+    color:  red;
+    --c-renk: black;
+
+ }
+
+ div{
+    background-color: aqua;
+ }
+  p{color:purple;
+ }

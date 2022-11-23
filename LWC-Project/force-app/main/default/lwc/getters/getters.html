@@ -1,0 +1,44 @@
+<template>
+    <lightning-card title = "Getters">
+        <h1>Number 1 : {num1}</h1>
+        <h1>Number 2 : {num2}</h1>
+        <h1>Sum of Num1 and Num2 : {sumOfNumbers}</h1>
+ <!-- THIS IS NOT ALLOWED -->
+    <!-- <h1>Sum of Num1 and Num2 : {num1 + num2}</h1> -->
+
+  <h1>My best Friend is {myBestFriend}</h1>
+
+    <!--yeni ornek-->
+
+    </lightning-card>
+
+
+
+
+   <lightning-card title="Math Operation">
+    <lightning-input type ="number"
+    label ="Enter Number 1"
+    onchange={handleNum1}></lightning-input>
+
+    <lightning-input type ="number"
+    label ="Enter Number 2"
+    onchange={handleNum2}></lightning-input>
+
+    <div>Sum of {num3} and {num4} is {sumOfNums}</div> 
+    <br>
+    <div>Difference of {num3} and {num4} is {differenceOfNums}</div>
+    <br>
+    <div>Multiplication of {num3} and {num4} is {multiplicationOfNums}</div>
+    <br>
+    <div>Division of {num3} and {num4} is {divisionOfNums}</div>
+
+
+
+
+
+   </lightning-card>
+   
+   
+   
+   
+</template>

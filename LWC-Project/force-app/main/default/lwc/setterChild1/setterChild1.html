@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Setter Child">
+        <h1>Calculated Age : {calculatedAge}</h1>
+        <h1>Customer Age Doubled : {customerAge}</h1>
+    </lightning-card>
+    
+</template>
+
+<!-- Create a new component : setterChild1 
+In setterChild1 js, create 3 properties : calculatedAge, get customerAge method, and set customerAge methods
+    calculatedAge=10;
+    @api
+    get customerAge(){
+        return this.calculatedAge;}
+//parentdan gelen degere yeni deger atamak icin kullanılacak
+    set customerAge(data){
+        this.calculatedAge=data*2}
+In child html, bir paragraph olusturun ve calculatedAge degerini gosterin
+   <h1>Customer Age Doubled : {calculatedAge}</h1>
+In parent js, bir property olusturun : newAge
+    newAge=25;
+Then assign customerDetail to customer
+In parent html call c-setter-child  And assign customer a value using customerDetails object
+ <c-setter-child1 customer-age={newAge}></c-setter-child1> -->
